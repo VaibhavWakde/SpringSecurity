@@ -23,6 +23,7 @@ public class JWTServiceImpl implements JWTService {
                 .compact();
     }
 
+
     public String extractUserName(String token) {
         return extractClaim(token, Claims::getSubject);
     }
